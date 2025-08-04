@@ -10,8 +10,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "classnames": "^2.5.1",
     "next": "15.3.5",
-    "react": "^19.0.0",
+    "react": "^19.1.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
