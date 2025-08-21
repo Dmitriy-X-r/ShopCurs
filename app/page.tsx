@@ -1,12 +1,17 @@
+'use client'
+
 import { Button, Htag, P, Tag } from "./components";
 import styles from "./page.module.css";
-import React, { JSX } from "react";
+import React, { JSX, useState } from "react";
 
 export default function Home(): JSX.Element {
+
+  const [counter, setCounter] = useState(0);
+
   return (
     <div className={styles.page}>
-      <Htag tag="h1">Текст</Htag>
-      <Button appearance="primary" arrow="right">Кнопка</Button>
+      <Htag tag="h1">{counter}</Htag>
+      <Button appearance="primary" arrow="right" onClick={() => setCounter(x => x + 1)}>Кнопка</Button>
       <Button appearance="ghost" arrow="down">Button</Button>
 
       <P size="18px">Большой</P>
